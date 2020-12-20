@@ -121,7 +121,7 @@ namespace ro_meta_data {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
-#define __RO_Meta_ns NANO_CAF_NS::ro_meta_data
+#define __RO_Meta_ns ro_meta_data
 #define __RO_MeTa(x) __RO_Meta_ns::meta_type_trait<__MACO_var_type(x)>
 #define __RO_Meta_value_type(x) typename __RO_MeTa(x)::value_type
 #define __RO_Meta_result(x) typename __RO_MeTa(x)::return_type

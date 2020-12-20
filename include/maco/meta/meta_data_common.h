@@ -47,8 +47,12 @@ namespace meta_data {
 
 struct modify_meta{};
 
-#define __Meta_ns NANO_CAF_NS::meta_data
+#define __Meta_ns meta_data
 #define __MeTa_var(x) __MACO_paste(__MACO_var_name(x), _)
+#define __MeTa_ro_cls(x) __MACO_paste(__MACO_var_name(x), _ro_cls)
+#define __MeTa_rw_cls(x) __MACO_paste(__MACO_var_name(x), _rw_cls)
+#define __MeTa_ro_name(x) __MACO_paste(__MACO_var_name(x), _ro)
+#define __MeTa_rw_name(x) __MACO_paste(__MACO_var_name(x), _rw)
 #define __MeTa_byte(x) __MACO_paste(__MACO_var_name(x), _byte)
 #define __MeTa_mask(x) __MACO_paste(__MACO_var_name(x), _mask)
 #define __MeTa_clear_mask(x) __MACO_paste(__MACO_var_name(x), _clear_mask)
